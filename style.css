@@ -78,3 +78,29 @@
   transform: scale(1.03);
   background-color: rgba(255, 255, 255, 0.1);
 }
+/* 기존 코드 그대로 유지하고, 아래만 추가 */
+
+@media (max-width: 768px) {
+  .bg-video {
+    object-fit: contain;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
