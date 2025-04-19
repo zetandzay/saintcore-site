@@ -6,42 +6,114 @@
   <title>SAINT CORE</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .click-overlay {
-      position: absolute;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .bg-video {
+      position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      color: #f44;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    .hero-content a {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: rgba(255, 69, 58, 0.8);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-content a:hover {
+      background-color: rgba(255, 69, 58, 1);
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .bg-video {
+        object-fit: contain;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+
+      .hero-content a {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="hero">
-    <!-- 영상 백그라운드 -->
-    <a href="/machines" class="click-overlay"></a>
-    <video autoplay muted loop playsinline class="bg-video">
-      <source src="https://raw.githubusercontent.com/zetandzay/saintcore-site/main/video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
-    <!-- 텍스트 -->
+    <a href="/machines">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </a>
+    <div class="overlay"></div>
     <div class="hero-content">
       <h1>SAINT CORE</h1>
       <p>The Brotherhood of Machines</p>
-      <a href="#machines" class="cta-btn">Explore Our Machines</a>
+      <a href="/machines">Explore Our Machines</a>
     </div>
   </div>
 </body>
 </html>
-<section id="machines" class="machines-section">
-  <h2>OUR MACHINES</h2>
-  <div class="machine-list">
-    <div class="machine-item">Ducati Monster 937</div>
-    <div class="machine-item">Harley Dyna Low Rider S</div>
-    <div class="machine-item">Husqvarna Vitpilen 401</div>
-    <div class="machine-item">Suzuki V-Strom 650</div>
-    <div class="machine-item">Husqvarna Supermoto 701</div>
-    <div class="machine-item">Triumph T120 Bobber</div>
-  </div>
-</section>
