@@ -43,3 +43,38 @@
 .cta-btn:hover {
   background-color: rgba(255, 69, 58, 1);
 }
+.machines-section {
+  padding: 6rem 2rem;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+}
+
+.machines-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ff453a;
+  letter-spacing: 2px;
+}
+
+.machine-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.machine-item {
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.machine-item:hover {
+  transform: scale(1.03);
+  background-color: rgba(255, 255, 255, 0.1);
+}
