@@ -1,9 +1,4 @@
-.hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
+/* 🎥 Fullscreen Background Video */
 .bg-video {
   position: fixed;
   top: 0;
@@ -14,42 +9,39 @@
   z-index: -1;
 }
 
+/* ✍️ Text Content Styling */
 .hero-content {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  color: #fff;
   text-align: center;
-  padding: 2rem;
-  backdrop-filter: brightness(0.8);
+  color: #fff;
+  padding: 20vh 2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content h1 {
-  font-size: 4rem;
-  color: #f44;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  letter-spacing: 2px;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  opacity: 0.9;
+  font-size: 1.2rem;
+  opacity: 0.85;
   margin-bottom: 2rem;
 }
 
 .cta-btn {
-  padding: 1rem 2rem;
-  background-color: #f44;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
   color: #fff;
+  background-color: rgba(255, 69, 58, 0.8);
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  transition: background 0.3s;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #ff6666;
+  background-color: rgba(255, 69, 58, 1);
 }
