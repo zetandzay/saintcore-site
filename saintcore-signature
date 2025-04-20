@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <table style="font-family: Arial, sans-serif; font-size: 14px; color: #ffffff; background-color: #111111; padding: 16px; border-radius: 12px; max-width: 400px;">
+      <tr>
+        <td style="padding-bottom: 8px; font-weight: bold; font-size: 16px;">Jay | Founder & Commander</td>
+      </tr>
+      <tr>
+        <td style="padding-bottom: 8px;">Saint CORE</td>
+      </tr>
+      <tr>
+        <td style="padding-bottom: 4px;">
+          📧 <a href="mailto:boss@saintcore.studio" style="color: #FF3C3C; text-decoration: none;">boss@saintcore.studio</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-bottom: 4px;">
+          🌐 <a href="https://www.saintcore.studio" style="color: #FF3C3C; text-decoration: none;">www.saintcore.studio</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-bottom: 4px;">
+          📷 <a href="https://www.instagram.com/saintcore.official" style="color: #FF3C3C; text-decoration: none;">@saintcore.official</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          💬 <a href="https://discord.gg/saintcore" style="color: #FF3C3C; text-decoration: none;">discord.gg/saintcore</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
