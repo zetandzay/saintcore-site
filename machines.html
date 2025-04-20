@@ -2,22 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OUR MACHINES</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAINT CORE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    .video-link {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      video {
+        object-fit: contain;
+        background-color: #000;
+      }
+    }
+  </style>
 </head>
-<body class="machines-page">
-  <section class="machines">
-    <h1>OUR MACHINES</h1>
-    <p>This is the collection of machines we ride and represent.</p>
-    <ul>
-      <li>Ducati Monster 937</li>
-      <li>Harley Davidson FXDLS</li>
-      <li>Husqvarna Vitpilen 401</li>
-      <li>Suzuki V-strom 650</li>
-      <li>Husqvarna SUPERMOTO 701</li>
-      <li>Triumph Bonneville Bobber</li>
-    </ul>
-  </section>
+<body>
+  <a href="/machines" class="video-link">
+    <video autoplay muted loop playsinline>
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </a>
 </body>
 </html>
