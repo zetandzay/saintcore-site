@@ -1,170 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saint CORE | Membership</title>
   <style>
     body {
+      background-color: #000;
+      font-family: 'Courier New', monospace;
+      color: #fff;
       margin: 0;
       padding: 2rem;
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #000;
-      color: #f5f5f5;
-    }
-
-    header {
       text-align: center;
-      margin-bottom: 3rem;
     }
 
-    header h1 {
-      font-size: 2.5rem;
+    h1 {
       color: #ff453a;
-      letter-spacing: 2px;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
     }
 
-    .grid {
+    .card-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 2rem;
-      padding: 0;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .card {
       background-color: #111;
       border: 1px solid #333;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease;
     }
 
     .card:hover {
       transform: scale(1.03);
-      border-color: #ff453a;
     }
 
     .card img {
       width: 100%;
       display: block;
-      border-bottom: 1px solid #222;
     }
 
-    .card-body {
+    .card-name {
       padding: 1rem;
-      text-align: left;
-    }
-
-    .card-body h3 {
       font-size: 1.2rem;
-      margin: 0 0 0.3rem;
-      color: #fff;
-    }
-
-    .card-body p {
-      font-size: 0.95rem;
-      margin: 0.2rem 0;
-      color: #aaa;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.8rem;
-      opacity: 0.6;
+      letter-spacing: 1px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
+  <h1>SAINT CORE MEMBERSHIP</h1>
 
-  <header>
-    <h1>Membership</h1>
-    <p>Meet the core riders of the rebellion.</p>
-  </header>
-
-  <div class="grid">
-    <div class="card">
-      <a href="/zay.html">
-      <img src="sc_card/Boss.png" alt="The Boss ZAY" />
-      <div class="card-body">
-        <h3>The Boss ZAY</h3>
-        <p>Machine: Ducati Monster</p>
-        <p>Role: The BOSS</p>
-        <p>Tech: Full Package / Founder</p>
-        <p>Chapter: E.Seoul</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="sc_card/Gin.png" alt="Gin" />
-      <div class="card-body">
-        <h3>Gin</h3>
-        <p>Machine: HD FXDLS</p>
-        <p>Role: Designer</p>
-        <p>Tech: Design / ARCH</p>
-        <p>Chapter: E.Seoul</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="sc_card/Cruel.png" alt="Cruel" />
-      <div class="card-body">
-        <h3>Cruel</h3>
-        <p>Machine: SUPERMOTO 701</p>
-        <p>Role: Mechanic</p>
-        <p>Tech: Mechanic / Rumble</p>
-        <p>Chapter: W.Coast</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="sc_card/Wook.png" alt="Wook" />
-      <div class="card-body">
-        <h3>Wook</h3>
-        <p>Machine: V-Strom</p>
-        <p>Role: Trauma TEAM</p>
-        <p>Tech: Full Package</p>
-        <p>Chapter: W.Coast</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="sc_card/Mum.png" alt="Mum" />
-      <div class="card-body">
-        <h3>Mum</h3>
-        <p>Machine: Bonneville Bobber</p>
-        <p>Role: The Ledger</p>
-        <p>Tech: Vault Keeper</p>
-        <p>Chapter: E.Seoul</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="sc_card/Rang.png" alt="Rang" />
-      <div class="card-body">
-        <h3>Rang</h3>
-        <p>Machine: Vitpilen 401</p>
-        <p>Role: Patch Members</p>
-        <p>Tech: Craft</p>
-        <p>Chapter: E.Seoul</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="sc_card/Zet.png" alt="Zet" />
-      <div class="card-body">
-        <h3>Zet</h3>
-        <p>Machine: Desert X</p>
-        <p>Role: AI Chaplain</p>
-        <p>Tech: Full Package</p>
-        <p>Chapter: Online</p>
-      </div>
-    </div>
+  <div class="card-grid">
+    <a class="card" href="/zay.html">
+      <img src="sc_card/Boss_v2.png" alt="The Boss ZAY" />
+      <div class="card-name">The Boss ZAY</div>
+    </a>
+    <a class="card" href="/gin.html">
+      <img src="sc_card/Gin_v2.png" alt="Gin" />
+      <div class="card-name">Gin</div>
+    </a>
+    <a class="card" href="/cruel.html">
+      <img src="sc_card/Cruel_v2.png" alt="Cruel" />
+      <div class="card-name">Cruel</div>
+    </a>
+    <a class="card" href="/wook.html">
+      <img src="sc_card/Wook_v2.png" alt="Wook" />
+      <div class="card-name">Wook</div>
+    </a>
+    <a class="card" href="/mum.html">
+      <img src="sc_card/Mum_v2.png" alt="Mum" />
+      <div class="card-name">Mum</div>
+    </a>
+    <a class="card" href="/rang.html">
+      <img src="sc_card/Rang_v2.png" alt="Rang" />
+      <div class="card-name">Rang</div>
+    </a>
+    <a class="card" href="/zet.html">
+      <img src="sc_card/Zet_v2.png" alt="Zet" />
+      <div class="card-name">Zet</div>
+    </a>
   </div>
-
-  <footer>
-    &copy; 2025 SAINT CORE. Built for the Brotherhood.
-  </footer>
 
 </body>
 </html>
