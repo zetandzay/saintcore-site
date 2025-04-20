@@ -1,3 +1,13 @@
+/* 기본 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000;
+  color: #f5f5f5;
+}
+
+/* 배경 비디오 */
 .bg-video {
   position: fixed;
   top: 0;
@@ -8,6 +18,7 @@
   z-index: -1;
 }
 
+/* Hero 콘텐츠 (첫 화면 중앙 텍스트) */
 .hero-content {
   position: relative;
   z-index: 3;
@@ -43,6 +54,39 @@
 .cta-btn:hover {
   background-color: rgba(255, 69, 58, 1);
 }
+
+/* machines 페이지 전용 */
+.machines-page {
+  background-color: #111;
+  color: #f5f5f5;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 2rem;
+  text-align: center;
+}
+
+.machines h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff4444;
+}
+
+.machines p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.machines ul {
+  list-style: none;
+  padding: 0;
+}
+
+.machines li {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Machines 리스트 카드 스타일 (선택적) */
 .machines-section {
   padding: 6rem 2rem;
   background-color: #111;
@@ -78,32 +122,8 @@
   transform: scale(1.03);
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* 기존 코드 그대로 유지하고, 아래만 추가 */
 
-@media (max-width: 768px) {
-  .bg-video {
-    object-fit: contain;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .hero-content {
-    padding: 1rem;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .cta-btn {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
-  }
-}
+/* 모바일 대응 */
 @media (max-width: 768px) {
   .bg-video {
     object-fit: contain;
@@ -132,40 +152,4 @@
     font-size: 1rem;
     padding: 0.7rem 1.2rem;
   }
-}
-.machines-page {
-  background-color: #111;
-  color: #f5f5f5;
-  font-family: 'Arial', sans-serif;
-  padding: 2rem;
-  text-align: center;
-}
-
-.machines h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #ff4444;
-}
-
-.machines p {
-  font-size: 1.2rem;
-  opacity: 0.8;
-  margin-bottom: 2rem;
-}
-
-.machines ul {
-  list-style: none;
-  padding: 0;
-}
-
-.machines li {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #000;
-  color: #f5f5f5;
 }
