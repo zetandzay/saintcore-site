@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Saint CORE | Home</title>
   <style>
     body {
@@ -36,7 +36,8 @@
       padding: 1rem;
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      flex-wrap: wrap; /* ✅ 줄바꿈 허용 */
+      gap: 1.2rem;
       border-top: 1px solid #333;
       border-bottom: 1px solid #333;
     }
@@ -46,10 +47,13 @@
       text-decoration: none;
       font-size: 1.1rem;
       transition: 0.3s;
+      padding: 0.5rem 1rem;
+      border: 1px solid transparent;
     }
 
     nav a:hover {
       color: #ff453a;
+      border-color: #ff453a;
     }
 
     section {
@@ -76,6 +80,19 @@
       font-size: 0.8rem;
       opacity: 0.6;
     }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -86,16 +103,14 @@
   </header>
 
   <nav>
-    <a href="/machines.html">Founders</a>
-    <a href="#">Members</a>
-    <a href="#">Business</a>
-    <a href="#">Media</a>
-    <a href="#">Contact</a>
+    <a href="/membership.html">Membership</a>
+    <a href="/media.html">Media</a>
+    <a href="/contact.html">Contact</a>
   </nav>
 
   <section>
     <h2>Welcome to Saint CORE</h2>
-    <p>Choose a category above to explore the crew, operations, and digital archives of the movement.</p>
+    <p>Explore our crew, stories, and machine-led journeys through the digital core of rebellion.</p>
   </section>
 
   <footer>
