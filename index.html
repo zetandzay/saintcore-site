@@ -3,48 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAINT CORE</title>
+  <title>Saint CORE – Machines</title>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+      padding: 2rem;
       background-color: #000;
+      color: #f5f5f5;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .video-link {
-      display: block;
-      width: 100vw;
-      height: 100vh;
-      position: relative;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #fff;
+      letter-spacing: 2px;
+      text-align: center;
     }
 
-    video {
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-width: 1200px;
     }
 
-    @media (max-width: 768px) {
-      video {
-        object-fit: contain;
-        background-color: #000;
+    .member-card {
+      width: 100%;
+      background-color: #111;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #333;
+    }
+
+    .member-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
-  <a href="/machines" class="video-link">
-    <video autoplay muted loop playsinline>
-      <source src="video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </a>
+
+  <h1>OUR MACHINES</h1>
+
+  <div class="card-grid">
+    <div class="member-card"><img src="/sc_card/Boss.png" alt="The Boss Zay"></div>
+    <div class="member-card"><img src="/sc_card/Cruel.png" alt="Cruel"></div>
+    <div class="member-card"><img src="/sc_card/Gin.png" alt="Gin"></div>
+    <div class="member-card"><img src="/sc_card/Mum.png" alt="Mum"></div>
+    <div class="member-card"><img src="/sc_card/Rang.png" alt="Rang"></div>
+    <div class="member-card"><img src="/sc_card/Wook.png" alt="Wook"></div>
+    <div class="member-card"><img src="/sc_card/Zet.png" alt="Zet"></div>
+  </div>
+
 </body>
 </html>
